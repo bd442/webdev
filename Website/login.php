@@ -122,7 +122,7 @@ if(isset($_POST['submitted']))
 
 			<input type='hidden' name='submitted' id='submitted' value='1'/>
 
-			<div class='short_explanation'>* required fields</div>
+			<div class='short_explanation'>* Required Fields</div>
 
 			<div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
 			<div class='container'>
