@@ -1,0 +1,65 @@
+body {  
+		background-color: Turquoise;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 12px;
+     }
+#image  { 
+	float:right;
+        margin-top:0cm;         
+		width:45%;
+		           }
+    #green{
+    	float:left;
+        margin-top:0cm;
+        margin-left:1cm;
+    	clear:both;
+    	width:5%;
+    	
+    }
+    #logout {
+    	float:center;
+    	text-align:center;
+    	margin-right:6cm;
+    }
+#datalog {
+	text-align:center;
+}
+ h2  { 	border-top: blue 1px dotted;
+   		border-right: blue 1px dotted;
+   		border-left: blue 1px dotted;
+   		border-bottom: blue 1px dotted;
+   		width:75%;
+       margin-top:3.5cm;
+       margin-left:auto;
+       margin-right:auto;
+        font:"Courier New";
+        
+    }
+p {
+	margin-top:0.1cm;
+	margin-bottom:0.1cm;	
+	text-align:center;	
+	font-size: 16px;
+}
+    
+ table {
+         border-collapse: collapse;
+         width: 70%;
+         margin:auto;
+         text-align: left;
+      } 
+
+iframe { 	margin:0 auto;
+			padding: auto;
+			border: none;
+			width: 100%;
+			height: 10%;
+			text-align: center;					
+}
+
+#graph {
+	text-align: center;
+		font-size: 16px;	
+}

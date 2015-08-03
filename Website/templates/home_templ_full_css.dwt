@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Wim Melis Web Area</title>
+<meta name="Wim Melis Web Area" content="Wim J. C. Melis Home Pages">
+<!-- TemplateEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css" title="normal" />
+	<link rel="alternate stylesheet" type="text/css" href="../css/xsmall.css" title="xsmall" />
+	<link rel="alternate stylesheet" type="text/css" href="../css/medium.css" title="medium" />
+	<link rel="alternate stylesheet" type="text/css" href="../css/large.css" title="large" />
+	<link rel="alternate stylesheet" type="text/css" href="../css/xlarge.css" title="xlarge" />
+	<script language="JavaScript" src="../top_menu.js" type="text/javascript"></script>
+	<script language="JavaScript1.2" src="../javascript/mm_menu.js" type="text/javascript"></script>
+</head>
+
+<body>
+<script language="JavaScript1.2">mmLoadMenus();</script>
+  <a name="top"></a>
+  <div id="outer">
+  	<div id="header"><!-- TemplateBeginEditable name="Location_image" --><!-- TemplateEndEditable -->
+  	</div>
+  	<div id="menubar"> <a href="../news/index.htm" onmouseover="MM_showMenu(window.mm_menu_0,0,20,null,'t_menu_1')" onmouseout="MM_startTimeout();" onfocus="MM_showMenu(window.mm_menu_0,0,20,null,'t_menu_1')" onblur="MM_startTimeout();" tabindex="6"><img src="../images/menu_1.jpg" border="0" width="158" height="30" alt="News" name="t_menu_1" id="t_menu_1"/></a><img src="../images/menu_separate.jpg" width="2" height="30"  name="menu_spacer" id="menu_space_1" /><a href="../personal/index.htm" onmouseover="MM_showMenu(window.mm_menu_1,0,30,null,'t_menu_2')" onmouseout="MM_startTimeout();" onfocus="MM_showMenu(window.mm_menu_1,0,30,null,'t_menu_2')" onblur="MM_startTimeout();" tabindex="7"><img src="../images/menu_2.jpg" border="0" width="158" height="30" alt="Personal" name="t_menu_2" id="t_menu_2"/></a><img src="../images/menu_separate.jpg" width="2" height="30"  name="menu_spacer" id="menu_space_2" /><a href="../professional/index.htm" onmouseover="MM_showMenu(window.mm_menu_2,0,30,null,'t_menu_3')" onmouseout="MM_startTimeout();" onfocus="MM_showMenu(window.mm_menu_2,0,30,null,'t_menu_3')" onblur="MM_startTimeout();" tabindex="7"><img src="../images/menu_3.jpg" border="0" width="160" height="30" alt="Professional" name="t_menu_3" id="t_menu_3"/></a><img src="../images/menu_separate.jpg" width="2" height="30" name="menu_spacer" id="menu_space_3" /><a href="../computing/index.htm" onmouseover="MM_showMenu(window.mm_menu_3,0,30,null,'t_menu_4')" onmouseout="MM_startTimeout();" onfocus="MM_showMenu(window.mm_menu_3,0,30,null,'t_menu_4')" onblur="MM_startTimeout();" tabindex="7"><img src="../images/menu_4.jpg" border="0" width="158" height="30" alt="Computing Info" name="t_menu_4" id="t_menu_4"/></a><span id="menu_space_4"><img src="../images/menu_separate.jpg" width="2" height="30"  alt="" name="menu_spacer" id="menu_space_4" /></span><a href="../links/index.htm" onmouseover="MM_showMenu(window.mm_menu_4,0,30,null,'t_menu_5')" onmouseout="MM_startTimeout();" onfocus="MM_showMenu(window.mm_menu_4,0,30,null,'t_menu_5')" onblur="MM_startTimeout();" tabindex="7"><img src="../images/menu_5.jpg" border="0" width="158" height="30" alt="Links" name="t_menu_5" id="t_menu_5"/></a> </td>
+    </div>
+    	<div id="left">
+        <ul id="l_menu_nav">
+          <li><a href="../news/index.htm">News</a></li>
+          <li class="sub"><a href="../personal/index.htm">Personal >></a>
+              <ul>
+                <li><a href="../personal/who.htm">Who am I ?</a></li>
+				<li><a href="../personal/pictures.htm">Pictures</a></li>
+                <li class="sub"><a href="../personal/inter.htm">Interests / Hobbies >></a>
+					<ul>
+                      <li><a href="../personal/quotes.htm">Quotes & Wisdoms</a></li>
+			    <!--Comment out this section
+                      <li><a href="../personal/martial.htm">Martial arts</a></li>
+                      <li><a href="../personal/tcm.htm">TCM</a></li>
+                      <li><a href="../personal/diy.htm">DIY</a></li>
+					  <li><a href="../personal/cooking.htm">Cooking</a></li>
+					  -->
+                    </ul>
+				</li>
+                <li class="sub"><a href="../personal/entert.htm">Entertainment >></a>
+					<ul>
+					  <!--Comment out this section
+                      <li><a href="../personal/jokes.htm">Jokes</a></li>
+					  -->
+                      <li><a href="../personal/game.htm">Game</a></li>
+                    </ul>
+				</li>
+				
+              </ul>
+          </li>
+          <li class="sub"><a href="../professional/index.htm">Professional >></a>
+              <ul>
+                <li><a href="../professional/backgrnd.htm">Professional Background</a></li>
+                <li><a href="../professional/consultancy.htm">Consultancy</a></li>
+				<li><a href="../professional/publications.htm">Publications</a></li>
+                <li><a href="../professional/research.htm">Research Interests</a></li>
+              </ul>
+          </li>
+          <li class="sub"><a href="../computing/index.htm">Comp. Info >></a>
+              <ul>
+                <li><a href="../computing/hardware.htm">Hardware</a></li>
+				<li class="sub"><a href="../computing/software.htm">Software >></a>
+					<ul>
+						<li><a href="../computing/sw_gen.htm">General</a></li>
+						<!--Comment out this section
+						<li><a href="../computing/linux.htm">Linux</a></li>
+						<li><a href="../computing/multisystem.htm">Multisystem</a></li>
+						<li><a href="../computing/windows.htm">Windows</a></li>
+						-->	
+					</ul>
+					</li>
+              </ul>
+          </li>
+          <li class="sub"><a href="../links/index.htm">Links >></a>
+			  <ul>
+                <li><a href="../links/index.htm#personal">Personal</a></li>
+                <li><a href="../links/index.htm#prof">Professional</a></li>
+                <li><a href="../links/index.htm#comp">Computing info</a></li>
+              </ul>  
+		  </li>
+      </ul></div>
+      <div id="right"><!-- TemplateBeginEditable name="Right_column" --><p>Content right column</p><!-- TemplateEndEditable --></div>
+      <div id="middle"><!-- TemplateBeginEditable name="Content" -->
+      <p>!! UNDER CONSTRUCTION !! </p>
+        <p>!! SORRY FOR THE INCONVENIENCE CAUSED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+        <p>!! VISIT AGAIN SOON !!</p><!-- TemplateEndEditable --></div>
+<div id="footer">
+		<div id="up-field">
+        	<div align="center"> <a href="#top" class="up" ><b>- - - - - - - - </b>[UP] <b>- - - - - - - -</b></a></div>
+      	</div><div id="footer" align="center" class="copyright"><b>&copy;</b><strong> </strong>Wim Melis Web Area </div></td>
+	</div>
+  </div>
+</body>
+</html>
