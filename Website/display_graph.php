@@ -551,7 +551,7 @@ function createValues($id='select_value', $selected=null)
         <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
 	        <input type='hidden' name='submitted' id='submitted' value='1'/>
     		<input type="submit" name="Plot Graphs" value="Submit" />
-		</form>
+		</form>tc_calendar
         
         
         
