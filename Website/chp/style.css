@@ -44,17 +44,6 @@ h1 {
 	font-size: 1.7em;
 }
 
-strong h1 {
-    color: #33CC33;
-	font-family: "snap itc", "forte", "ravie", "cooper black", "bremen bd bt", "Berlin sans fb", "magneto", "Beesknees ITC", Verdana, Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-style: italic;
-	text-transform: uppercase;
-	margin-top: 15px;
-	vertical-align: center;
-	font-size: 2em;
-}
-
 h2 {
 	color: #33CC33;
 	font-family: "snap itc", "forte", "ravie", "cooper black", "bremen bd bt", "Berlin sans fb", "magneto", "Beesknees ITC", Verdana, Arial, Helvetica, sans-serif;

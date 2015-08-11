@@ -22,7 +22,7 @@
 			<header>
 				<h1>Data</h1>
 			</header>
-			<button type="button" onClick="parent.location='/gwp/Examples/using-highcharts-with-php-and-mysql'">
+			<button type="button" onClick="parent.location='gwp/Examples/using-highcharts-with-php-and-mysql'">
 			Generate Graph
 			</button>
 			<nav>
