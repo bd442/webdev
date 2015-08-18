@@ -1,5 +1,17 @@
-<!DOCTYPE html>
+<?PHP
+
+$graphTypeError = "";
+	
+if ($_POST["graphtype"] == $_POST["emptyField"]) {
+	echo "success";
+}
+else {
+	echo "failure";
+}			
+
+?>
 <html lang="en">
+
 <style>
 div.generator {
 	width: 570px;
@@ -106,11 +118,42 @@ div.generator {
       <div id="wideright">
       </div>
       <header>
-      <h1>Info</h1>
+      <h1>Data</h1>
 	  </header>
 	  <!-- Intro -->
-	  
-		  <nav>
+	  This page will retrieve data from a MySQL database and display it onto a graph. Currently, the only supported graph is line graph.
+	  For more information, click <a href="/gwp/chp/info.htm">here</a>.
+			
+      <center>
+      <p>
+	  <div class="generator">
+		
+	      <!-- generates the graph -->
+		  Select the date and time you would like to view your data between:
+		  <div>
+
+		      <p>
+			      <form method="post">
+				      <input id="datetimemin" type="text" value="" name="firstDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+					  and
+					  <input id="datetimemax" type="text" value="" name="secondDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+					  <br>
+					  Type of graph*:
+					  <select id="graphtype" name="graphType">
+					      <option value="" name="emptyField"> -- Select --</option>
+					      <option value="Bar Chart" name="field_bar">Bar Chart</option>
+					      <option value="Line Graph" name="field_line">Line Graph</option>							
+						  <option value="Scatter Graph" name="field_scatter">Scatter Graph</option>
+					  </select>
+				  </form>
+			</p>
+			<button name="generateGraph" type="submit" onClick="parent.location='/gwp/Examples/using-highcharts-with-php-and-mysql'">Generate Graph</button>
+			<pre>* = required</pre>
+			</div>
+	  </div>
+	  </p>
+	  </center>
+	  <nav>
 	      <p>
 	          <a href="/gwp/login.php">Home</a>
 	      </p>
@@ -124,5 +167,4 @@ div.generator {
 	  </center>
 	</div>
 	</body>
-
 </html>

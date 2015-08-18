@@ -83,6 +83,14 @@ hr {
 	height: 1px;
 }
 
+div.generator {
+	width: 570px;
+	padding: 25px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 25px
+	font-size: 15px;
+}
 
 .mainbody a {
 	display: inline;
@@ -465,6 +473,14 @@ div#left_extra {
 	display: block;
 	padding-top: 200px;
 	padding-right: 3px;
+}
+
+div#left_submenu {
+	float: left;
+	width: 95px;
+	display: block;
+	padding-top: 200px;
+	padding-right: 35px;
 }
 
 div#wideright {

@@ -25,7 +25,7 @@ if(!$fgmembersite->CheckLogin())
 	<link rel="alternate stylesheet" type="text/css" href="css/xlarge.css" title="xlarge" />
 	<script language="JavaScript" src="top_menu.js" type="text/javascript"></script>
 	<script language="JavaScript1.2" src="javascript/mm_menu.js" type="text/javascript"></script>
-    <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
+    <script type="text/javascript" src="scripts/gen_validatorv31.js"></script>
     <script src="scripts/pwdwidget.js" type="text/javascript"></script>
 </head>
 

@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <!-- Put PhP here for Restricted Pages -->
 <?PHP
-require_once("./include/membersite_config.php");
+require_once("../include/membersite_config.php");
 
 if(isset($_POST['submitted']))
 {
@@ -80,7 +80,7 @@ if(isset($_POST['submitted']))
           <li class="sub"><a href="chp/index.htm">CHP >></a>
               <ul>
                 <li><a href="chp/info.htm">Info</a></li>
-				<li><a href="chp/data.htm">Data</a></li>
+				<li><a href="chp/data.php">Data</a></li>
               <!--Comment out this section
                 <li class="sub"><a href="../chp/.htm">With Subs >></a>
 					<ul>

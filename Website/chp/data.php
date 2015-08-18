@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<style>
-div.generator {
-	width: 570px;
-	padding: 25px;
-	border-style: solid;
-	border-width: 1px;
-	margin: 25px
-	font-size: 15px;
+<?PHP
+require_once("../include/membersite_config.php");
+
+if(isset($_POST['submitted']))
+{
+   if($fgmembersite->Login())
+   {
+        $fgmembersite->RedirectToURL("login-home.php");
+   }
 }
-</style>
+
+?>
+
+<html lang="en">
 	<!-- CSS Style sheet link below -->
 	<link rel="stylesheet" type="text/css" href="/gwp/css/style.css" title="normal"/>
 	<head>
 		<script language="JavaScript" src="top_menu.js" type="text/javascript"></script>
 		<script language="JavaScript1.2" src="javascript/mm_menu.js" type="text/javascript"></script>
-   		<script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
+   		<script type="text/javascript" src="scripts/gen_validatorv31.js"></script>
     	<script src="scripts/pwdwidget.js" type="text/javascript"></script>
 		<meta charset="utf-8">
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
@@ -40,6 +42,20 @@ div.generator {
   		<a name="top"></a>
   		<div id="outer">
   			<div id="header_login">
+  			<?php
+        	require_once("../include/membersite_config.php");
+        	if (session_status() == PHP_SESSION_NONE) {
+    			session_start();
+			}
+			if(!$fgmembersite->CheckLogin())
+				{
+				echo '<a href="login.php"><b>Log In</b></a>';
+				}
+			else 
+				{
+                echo  '<a href="logout.php"><b>Log Out</b></a>';
+				}
+			?>
   		</div>
   		<div id="header_banner"><!-- InstanceBeginEditable name="Location_image" --><!-- InstanceEndEditable -->
   		</div>
@@ -47,7 +63,7 @@ div.generator {
         <ul id="l_menu_nav">
         	<li class="sub"><a href=" ">Account >></a>
            		<?php
-        			require_once("./include/membersite_config.php");
+        			require_once("../include/membersite_config.php");
         			if (session_status() == PHP_SESSION_NONE) {
     					session_start();
 					}
@@ -106,11 +122,42 @@ div.generator {
       <div id="wideright">
       </div>
       <header>
-      <h1>Info</h1>
+      <h1>Data</h1>
 	  </header>
 	  <!-- Intro -->
-	  
-		  <nav>
+	  This page will retrieve data from a MySQL database and display it onto a graph. Currently, the only supported graph is line graph.
+	  For more information, click <a href="/gwp/chp/info.htm">here</a>.
+			
+      <center>
+      <p>
+	  <div class="generator">
+		
+	      <!-- generates the graph -->
+		  Select the date and time you would like to view your data between:
+		  <div>
+
+		      <p>
+			      <form method="post">
+				      <input id="datetimemin" type="text" value="" name="firstDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+					  and
+					  <input id="datetimemax" type="text" value="" name="secondDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+					  <br>
+					  Type of graph*:
+					  <select id="graphtype" name="graphType">
+					      <option value="" name="emptyField"> -- Select --</option>
+					      <option value="Bar Chart" name="field_bar">Bar Chart</option>
+					      <option value="Line Graph" name="field_line">Line Graph</option>							
+						  <option value="Scatter Graph" name="field_scatter">Scatter Graph</option>
+					  </select>
+				  </form>
+			</p>
+			<button name="generateGraph" type="submit" onClick="parent.location='/gwp/Examples/using-highcharts-with-php-and-mysql'">Generate Graph</button>
+			<pre>* = required</pre>
+			</div>
+	  </div>
+	  </p>
+	  </center>
+	  <nav>
 	      <p>
 	          <a href="/gwp/login.php">Home</a>
 	      </p>
@@ -124,5 +171,4 @@ div.generator {
 	  </center>
 	</div>
 	</body>
-
 </html>
