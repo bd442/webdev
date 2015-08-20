@@ -49,7 +49,7 @@ if(isset($_POST['submitted']))
 			}
 			if(!$fgmembersite->CheckLogin())
 				{
-				echo '<a href="login.php"><b>Log In</b></a>';
+				echo '<a href="../login.php"><b>Log In</b></a>';
 				}
 			else 
 				{
@@ -136,20 +136,21 @@ if(isset($_POST['submitted']))
 		  Select the date and time you would like to view your data between:
 		  <div>
 
-		      <p>
-			      <form method="post">
-				      <input id="datetimemin" type="text" value="" name="firstDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+				<p>
+			      <form action="../Examples/using-highcharts-with-php-and-mysql/data.php" method="post">
+				      <input id="datetimemin" type="text" value="" name="firstDate" placeholder="YYYY-MM-DD HH:mm:SS"></input>
 					  and
-					  <input id="datetimemax" type="text" value="" name="secondDate" placeholder="DD/MM/YYYY HH:mm:SS"></input>
+					  <input id="datetimemax" type="text" value="" name="secondDate" placeholder="YYYY-MM-DD HH:mm:SS"></input>
 					  <br>
-					  Type of graph*:
+					  <!-- Type of graph*:
 					  <select id="graphtype" name="graphType">
 					      <option value="" name="emptyField"> -- Select --</option>
 					      <option value="Bar Chart" name="field_bar">Bar Chart</option>
 					      <option value="Line Graph" name="field_line">Line Graph</option>							
 						  <option value="Scatter Graph" name="field_scatter">Scatter Graph</option>
-					  </select>
-				  </form>
+					  </select>-->
+					  <input type="submit">
+				   </form>
 			</p>
 			<button name="generateGraph" type="submit" onClick="parent.location='/gwp/Examples/using-highcharts-with-php-and-mysql'">Generate Graph</button>
 			<pre>* = required</pre>

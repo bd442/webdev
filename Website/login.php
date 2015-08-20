@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <!-- Put PhP here for Restricted Pages -->
 <?PHP
-require_once("../include/membersite_config.php");
+require_once("./include/membersite_config.php");
 
 if(isset($_POST['submitted']))
 {
