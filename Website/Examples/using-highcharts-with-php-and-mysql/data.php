@@ -6,8 +6,8 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$minDate = $_POST["firstDate"];
-$maxDate = $_POST["secondDate"];
+$minDate = $_GET["firstdate"];
+$maxDate = $_GET["seconddate"];
 
 $query = "SELECT * FROM `gwp_medway_campus_chp_data` where `Time_Stamp` BETWEEN ". "'" . $minDate . "'" . " AND ". "'" . $maxDate . "'" . "";
 $result = mysqli_query($con, $query);

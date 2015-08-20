@@ -137,23 +137,25 @@ if(isset($_POST['submitted']))
 		  <div>
 
 				<p>
-			      <form action="../Examples/using-highcharts-with-php-and-mysql/data.php" method="post">
+			      <form action="../Examples/using-highcharts-with-php-and-mysql/index.php" method="post">
 				      <input id="datetimemin" type="text" value="" name="firstDate" placeholder="YYYY-MM-DD HH:mm:SS"></input>
 					  and
 					  <input id="datetimemax" type="text" value="" name="secondDate" placeholder="YYYY-MM-DD HH:mm:SS"></input>
 					  <br>
-					  <!-- Type of graph*:
+					  Type of graph*:
 					  <select id="graphtype" name="graphType">
 					      <option value="" name="emptyField"> -- Select --</option>
 					      <option value="Bar Chart" name="field_bar">Bar Chart</option>
 					      <option value="Line Graph" name="field_line">Line Graph</option>							
 						  <option value="Scatter Graph" name="field_scatter">Scatter Graph</option>
-					  </select>-->
-					  <input type="submit">
+					  </select>
+					  <br>
+					  <br>
+					  <br>
+					  <input  type="submit">
 				   </form>
-			</p>
-			<button name="generateGraph" type="submit" onClick="parent.location='/gwp/Examples/using-highcharts-with-php-and-mysql'">Generate Graph</button>
-			<pre>* = required</pre>
+				</p>
+				<pre>* = required</pre>
 			</div>
 	  </div>
 	  </p>

@@ -1,5 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<?php
+	$minDate = $_POST["firstDate"];
+	$maxDate = $_POST["secondDate"];
+?>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
@@ -67,14 +73,15 @@
 						borderWidth: 0
 					},
 					series: [{
-						name: 'Count'
+						name: 'Total_kWh'
 					}]
 				}
 				// Load data asynchronously using jQuery. On success, add the data
 				// to the options and initiate the chart.
 				// This data is obtained by exporting a GA custom report to TSV.
 				// http://api.jquery.com/jQuery.get/
-				jQuery.get('data.php', null, function(tsv) {
+				
+				jQuery.get('data.php?firstdate=<?php echo $minDate; ?>&seconddate=<?php echo $maxDate; ?>', null, function(tsv) {
 					var lines = [];
 					consumption = [];
 					time		= [];
