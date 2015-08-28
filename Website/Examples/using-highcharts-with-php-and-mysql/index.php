@@ -81,7 +81,7 @@
 				// This data is obtained by exporting a GA custom report to TSV.
 				// http://api.jquery.com/jQuery.get/
 				
-				jQuery.get('data.php?firstdate=<?php echo $minDate; ?>&seconddate=<?php echo $maxDate; ?>', null, function(tsv) {
+				jQuery.get('data_query.php?firstdate=<?php echo $minDate; ?>&seconddate=<?php echo $maxDate; ?>', null, function(tsv) {
 					var lines = [];
 					consumption = [];
 					time		= [];
